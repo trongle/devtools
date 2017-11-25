@@ -29,7 +29,7 @@ class TimestampController extends Controller
         date_default_timezone_set($timezone);
 
         //response
-        return response()->json(['error' => 0, 'date' => date($format, $request->timestamp)]);
+        return response()->json(['error' => 0, 'date' => date($this->arrDateFormat[$format], $request->timestamp)]);
     }
 
     public function customize(Timestamp $request){
