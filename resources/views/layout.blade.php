@@ -9,7 +9,7 @@
         <title>{{ config('app.name', 'DevTools') }}</title>
 
         <!-- Fonts -->
-        <link rel="stylesheet" type="text/css" href="{{ secure_asset('css/app.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ get_asset('css/app.css') }}">
         <script>
             window.DT = {!!
                 json_encode([
@@ -28,5 +28,5 @@
     </body>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vee-validate@latest/dist/vee-validate.js"></script>
-    <script type="text/javascript" src="{{ secure_asset('js/app.js') }}"></script>
+    <script type="text/javascript" src="{{ get_asset('js/app.js') }}"></script>
 </html>
