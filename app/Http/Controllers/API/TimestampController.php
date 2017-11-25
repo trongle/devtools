@@ -20,10 +20,9 @@ class TimestampController extends Controller
 
     public function getTimestamp(Timestamp $request){
         $customize = $request->cookie('CTM');
-
         $arrCustomize = json_decode($customize, true);
 
-        $format = isset($arrCustomize['format']) ? $arrCustomize['format'] : $this->arrDateFormat['default'];
+        $format = isset($arrCustomize['format']) ? $arrCustomize['format'] : 'default';
         $timezone = isset($arrCustomize['timezone']) ? $arrCustomize['timezone'] : date_default_timezone_get();
 
         date_default_timezone_set($timezone);
