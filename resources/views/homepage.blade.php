@@ -15,7 +15,7 @@
                     <img data-src="http://loremflickr.com/300/250/lan-party">
                 </div> --}}
                 <div class="bod">
-                    <h3 class="title"><a href="{{ url('timestamp') }}">Timestamp converter</a></h3>
+                    <h3 class="title"><a href="{{ url('timestamp', [], true) }}">Timestamp converter</a></h3>
                     <p>A Unix timestamp (or epoch time) is the number of seconds that have elapsed since January 1, 1970 00:00 UTC.</p>
                 </div>
                 {{-- <div class="foot">
